@@ -1,14 +1,9 @@
-# Check if a word is an anagrams 
-# Example:
-# find_anagrams("hello") --> False
-# find_anagrams("racecar") --> True
-
 
 def find_anagrams(first_word, second_word):
     # [assignment] Add your code here
 
-    first_word = first_word.lower()
-    second_word = second_word.lower()
+    first_word = first_word.lower().strip().replace(" ", "")
+    second_word = second_word.lower().strip().replace(" ", "")
     
     if(len(first_word) != len(second_word)):
         return False
@@ -31,4 +26,4 @@ def find_anagrams(first_word, second_word):
     return True
 
 
-print(find_anagrams('creative', 'reactive'))
+print(find_anagrams('creative', 're active'))
