@@ -1,4 +1,3 @@
-
 def find_anagrams(first_word, second_word):
     # [assignment] Add your code here
 
